@@ -1,12 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SixtySecondDrip</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>If you see this, Netlify deploy worked 🎉</p>
-  </body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SixtySecondDrip — Coming Soon</title>
+<meta name="description" content="SixtySecondDrip — 60‑second tech, tools, and side‑hustle drip. Coming soon." />
+<style>
+:root { --border:#e5e7eb; --muted:#6b7280; }
+html,body{height:100%; margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:#fff;}
+body{display:grid; place-items:center; padding:24px;}
+.card{max-width:720px; width:100%; text-align:center; padding:40px 32px; border:1px solid var(--border); border-radius:16px; box-shadow:0 12px 30px rgba(0,0,0,0.06);}
+h1{font-size:28px; margin:0 0 6px; letter-spacing:.2px}
+p{margin:6px 0; color:var(--muted)}
+.links{margin-top:16px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap}
+.links a{padding:10px 14px; border:1px solid var(--border); border-radius:999px; text-decoration:none; color:#111; font-weight:500}
+.brand{font-weight:700}
+footer{margin-top:18px; font-size:12px; color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="card">
+<h1 class="brand">SixtySecondDrip</h1>
+<p>60‑second tools, tech & side‑hustle drip. ✨</p>
+<div class="links">
+<a href="https://tiktok.com/@sixtyseconddrip" target="_blank" rel="noopener">TikTok</a>
+<a href="https://instagram.com/sixtyseconddrip" target="_blank" rel="noopener">Instagram</a>
+<a href="https://youtube.com/@sixtyseconddrip" target="_blank" rel="noopener">YouTube</a>
+<a href="https://x.com/sixtyseconddrip" target="_blank" rel="noopener">X</a>
+</div>
+<footer>© <span id="y"></span> SixtySecondDrip</footer>
+</main>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
 </html>
